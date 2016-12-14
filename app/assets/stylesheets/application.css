@@ -1,0 +1,208 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ * #FF8686
+ *= require_tree .
+ *= require_self
+ */
+
+/*font-family: 'Inconsolata', monospace;
+font-family: 'Palanquin', sans-serif;
+#333333 -- black / #F7F7F7 -- white / #FF8686 -- rose */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 auto;
+  background: #F7F7F7;
+  width: 100%;
+  height: 100%;
+  font-family: 'Palanquin', sans-serif;
+  box-sizing: border-box;
+}
+
+            /*  GENERAL */
+
+.navbar {
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 80%;
+  color: #FF8686;
+}
+
+a {
+  color: #333333;
+  font-weight: 400;
+}
+p {
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: justify;
+}
+h1 {
+  color: #FF8686;
+}
+h3 {
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 200;
+}
+h6 a {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  color: #FF8686;
+  font-size: 23px;
+  transition: 0.1s linear;
+}
+h6 a:hover {
+  color: #333333;
+}
+#notice {
+  font-size: 10px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 10px;
+}
+
+        /* HOMEPAGE */
+
+.home {
+  position: relative;
+  text-align: center;
+  color: #FF8686;
+}
+.home h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 60px;
+  line-height: 12px;
+}
+.home h2 {
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 100;
+  font-size: 45px;
+}
+
+.home h5, .home a {
+  font-weight: 100;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 20px;
+  color: #FF8686;
+}
+
+          /* LOG IN & SIGN UP */
+
+.add {
+  width: 350px;
+  height: auto;
+  background: #FEFEFE;
+  margin: 25px;
+  padding: 20px;
+  -moz-box-shadow: 5px 5px 15px 1px #cfcfcf;
+  -webkit-box-shadow: 5px 5px 15px 1px #cfcfcf;
+  -o-box-shadow: 5px 5px 15px 1px #cfcfcf;
+  box-shadow: 5px 5px 15px 1px #cfcfcf;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=15);
+}
+.users {
+  width: 30%;
+}
+.users, .add {
+  margin: auto;
+  text-align: center;
+  margin-top: 15vh;
+  background: #FEFEFE;
+  padding: 20px;
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 200;
+  border: 1px solid #E1E1E1;
+  padding-bottom: 45px;
+}
+.users h1, .add h1 {
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  color: #333333;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+          /* QUOTES */
+
+.grid {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: calc(33.33% - 20px);
+}
+
+
+.card {
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  padding: 16px;
+}
+
+.grid-item h4 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+  color: #FF8686;
+  border-top: 2px solid #FF8686;
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+.like{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+                        /* BUTTONS, INPUT & EFFECTS */
+
+/* index */
+.grid img, .grid a, .navbar a {
+  text-decoration: none;
+  transition: 0.1s linear;
+}
+.navbar h3 a:hover {
+  color: #FF8686;
+}
+.like img:hover {
+  opacity: 0.5;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+.button img, .like img {
+  width: 30px;
+}
+.button img:hover, .like img:hover {
+  opacity: 0.7;
+}

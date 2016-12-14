@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MMI's quotes</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application','packery-docs' 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Palanquin:200,400,600" rel="stylesheet">
+</head>
+  <body>
+      <% if user_signed_in? %>
+      <div class="navbar">
+        <h6><%= link_to 'MMIs quotes', quotes_path %></h6>
+        <h6><%= link_to '+ New Quote', new_quote_path %></h6>
+        |<h3><%= link_to 'Edit profile', edit_user_registration_path %></h3>
+        <h3><%= link_to "Logout", destroy_user_session_path, method: :delete %></h3>
+      <% end %>
+    </div>
+    <%= yield %>
+  </body>
+  <footer>
+    <% if user_signed_in? %>
+      <p>Logged as <strong><%= current_user.email %></strong>.</p>
+    <% end %>
+    <p id="notice"><%= notice %></p>
+    <p> MMI's quotes © by Emeline Bailleul</p>
+  </footer>
+
+</html>

@@ -1,0 +1,17 @@
+    <div class="container">
+    <div class="post">
+
+      <div class="button">
+        <%= link_to quotes_path do%>
+          <img src="/return.svg">
+        <% end %>
+        <%= link_to edit_quote_path(@quote) do %>
+          <img src="/edit.svg">
+        <% end %>
+      </div>
+      <div class="quotes">
+          <p>"<%= @quote.quote %>"</p>
+          <h4>By <%= @quote.autor %> | <%= @quote.date %></h4>
+      </div>
+    </div>
+    </div>
