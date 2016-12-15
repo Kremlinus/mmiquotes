@@ -94,12 +94,14 @@ footer p {
 .home h1 {
   font-family: 'Inconsolata', monospace;
   font-size: 60px;
-  line-height: 12px;
+  line-height: 10px;
 }
 .home h2 {
   font-family: 'Palanquin', sans-serif;
   font-weight: 100;
   font-size: 45px;
+  margin-top: 40vh;
+  line-height: 20px;
 }
 
 .home h5, .home a {
