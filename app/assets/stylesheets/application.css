@@ -51,11 +51,13 @@ a {
   font-weight: 400;
 }
 p {
-  font-family: 'Palanquin', sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: justify;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 h1 {
   color: #FF8686;
@@ -70,7 +72,7 @@ h6 a {
   font-weight: 700;
   color: #FF8686;
   font-size: 23px;
-  transition: 0.1s linear;
+  transition: 0.3s linear;
 }
 h6 a:hover {
   color: #333333;
@@ -82,6 +84,27 @@ h6 a:hover {
 footer p {
   text-align: center;
   font-size: 10px;
+}
+.field {
+    border: 0px solid white;
+    border-bottom: 2px solid #E1E1E1;
+    margin: auto;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    margin-top: 0px;
+    transition: 0.3s linear;
+    background: transparent;
+    outline: 0;
+}
+.field:hover, .field:active, .field:focus {
+  outline: inherit;
+  border-bottom: 2px solid #FF8686;
+  outline-color: #FF8686;
+}
+input {
+  font-family: 'Incosolate', monospace;
+
 }
 
         /* HOMEPAGE */
@@ -100,7 +123,7 @@ footer p {
   font-family: 'Palanquin', sans-serif;
   font-weight: 100;
   font-size: 45px;
-  margin-top: 40vh;
+  margin-top: 30vh;
   line-height: 20px;
 }
 
@@ -126,11 +149,10 @@ footer p {
   filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=15);
 }
 .users {
-  width: 30%;
+  width: 40%;
 }
 .users, .add {
   margin: auto;
-  text-align: center;
   margin-top: 15vh;
   background: #FEFEFE;
   padding: 20px;
@@ -139,14 +161,24 @@ footer p {
   border: 1px solid #E1E1E1;
   padding-bottom: 45px;
 }
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
 .users h1, .add h1 {
-  font-family: 'Inconsolata', monospace;
-  text-transform: uppercase;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E1E1E1;
+    margin: auto;
+    margin-top: 20px;
+}
+.users p, .add p {
   text-align: center;
-  font-size: 30px;
-  color: #333333;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #E1E1E1;
 }
 
           /* QUOTES */
@@ -160,6 +192,7 @@ footer p {
 
 .grid-item {
   width: calc(33.33% - 20px);
+
 }
 
 
@@ -168,7 +201,13 @@ footer p {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   padding: 16px;
 }
+.cardshow {
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  padding: 16px;
+  width: 20%
 
+}
 .grid-item h4 {
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
@@ -190,7 +229,7 @@ footer p {
 /* index */
 .grid img, .grid a, .navbar a {
   text-decoration: none;
-  transition: 0.1s linear;
+  transition: 0.3s linear;
 }
 .navbar h3 a:hover {
   color: #FF8686;
@@ -203,8 +242,40 @@ footer p {
   justify-content: space-between;
 }
 .button img, .like img {
-  width: 30px;
+    width: 28px;
+    margin-top: 8px;
+    transition: 0.3s linear;
 }
 .button img:hover, .like img:hover {
   opacity: 0.7;
+}
+.cadre-bouton {
+  padding: 0;
+  border-bottom: 2px solid #FF8686;
+  color: #FF8686;
+  width: 60%;
+  margin: auto;
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-top: 20px;
+  transition: 0.3s linear;
+}
+.bouton {
+  text-decoration: none;
+  font-family: 'Inconsolata', monospace;
+  color: #FF8686;
+  text-transform: uppercase;
+  font-size: 17px;
+  border: 0px solid white;
+  background: transparent;
+  transition: 0.3s linear;
+}
+.bouton:hover, .cadre-bouton a:hover {
+  color: #333333;
+
+}
+.cadre-bouton:hover {
+  border-bottom: 2px solid #333333;
 }
