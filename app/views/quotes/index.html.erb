@@ -1,37 +1,52 @@
 <div class="grid">
+
   <% @quotes.each do |quote| %>
+
     <div class="grid-item , card ">
-        <div class="button">
+
+        <div class="button-admin">
           <% if can? :destroy, quote %>
             <%= link_to quote, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <img src="/delete.svg">
+              <i class="fa fa-ban" aria-hidden="true"></i>
             <% end %>
           <% end %>
           <% if can? :update, quote %>
             <%= link_to edit_quote_path(quote) do %>
-              <img src="/edit.svg">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
             <% end %>
           <% end %>
         </div>
+
         <div class="quotes">
             <p>"<%= quote.quote %>"</p>
-            <h4>By <%= quote.autor %> | <%= quote.date %></h4>
         </div>
-        <div class="like">
-        <%= link_to like_quote_path(quote), method: :put do %>
-          <img src="/like.svg"><%= quote.get_upvotes.size %>
-        <% end %>
-        <%= link_to dislike_quote_path(quote), method: :put do %>
-          <img src="/dislike.svg"><%= quote.get_downvotes.size %>
-        <% end %>
-      </div>
+
+        <div class="under">
+          <h4>By <%= quote.autor %></h4>
+          <div class="like">
+            <%= link_to like_quote_path(quote), method: :put do%>
+              <i class="fa fa-heart-o" aria-hidden="true"></i><%= quote.get_upvotes.size %>
+            <% end %>
+            <%= link_to dislike_quote_path(quote), method: :put do %>
+              <i class="fa fa-times" aria-hidden="true"></i><%= quote.get_downvotes.size %>
+            <% end %>
+          </div>
+        </div>
   </div>
 <% end %>
 <script>
-$('.grid').packery({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  gutter: 10
-});
+  $('.grid').packery({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    gutter: 5
+  });
+</script>
+<script>
+  $('.click').on('click',
+ function () {
+   $('i').toggleClass('fa fa-heart');
+
+ })
+
 </script>
 </div>

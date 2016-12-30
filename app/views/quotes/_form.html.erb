@@ -13,18 +13,13 @@
 
   <div>
     <%= f.label :quote %><br>
-    <%= f.text_area :quote, :class => 'field'%>
+    <%= f.text_area :quote%>
   </div>
   <div>
     <%= f.label :autor%><br>
-    <%= f.text_field :autor, :class => 'field'%>
+    <%= f.text_field :autor%>
   </div>
-  <div>
-    <%= f.label :date %><br>
-    <%= f.date_select :date%>
+  <div class="button-users">
+    <%= f.submit%>
   </div>
-  <div class='cadre-bouton'>
-    <%= f.submit :class => 'bouton' %>
-  </div>
-
 <% end %>

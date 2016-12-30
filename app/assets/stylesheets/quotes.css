@@ -1,0 +1,70 @@
+.grid {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: calc(33.33% - 20px);
+  min-width: 250px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  padding: 16px;
+}
+.cardshow {
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  padding: 16px;
+  width: 20%
+}
+.under {
+    width: 100%;
+    height: 40px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: baseline;
+    border-top: 2px solid #333333;
+}
+.under h4 {
+  font-family: 'Incosolata', monospace;
+  font-weight: 100;
+  color: #333333;
+}
+.like {
+  width: 25%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'Incosolata', monospace;
+}
+.button-admin {
+  width: 100%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+i {
+  color: #333333;
+}
+i.fa-heart {
+  color: #FF8686 !important;
+}
+i.fa-chevron-left {
+  margin-left: 30px;
+}
+.fa-heart-o:before {
+  content: "\f067";
+}
+.fa-heart:before {
+  content: "\f068";
+}

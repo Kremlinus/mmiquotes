@@ -1,0 +1,27 @@
+.home {
+  position: relative;
+  text-align: center;
+  color: #FF8686;
+}
+.home h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 60px;
+  line-height: 10px;
+}
+.home h2 {
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 100;
+  font-size: 45px;
+  margin-top: 30vh;
+  line-height: 20px;
+}
+
+.home h5, .home a {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 20px;
+  color: #FF8686;
+  font-weight: 100;
+}
+.home a {
+  font-weight: 600;
+}

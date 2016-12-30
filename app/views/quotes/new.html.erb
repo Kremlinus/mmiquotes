@@ -1,10 +1,13 @@
-    <div class="add">
+    <div class="users">
       <div class="button">
-    <%= link_to quotes_path do%>
-      <img src="/return.svg">
-    <% end %>
-    </div>
-    <h1>New Quote</h1>
-
-    <%= render 'form' %>
+        <%= link_to quotes_path do%>
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        <% end %>
+      </div>
+      <div class="title">
+        <h2>New Quote</h2>
+      </div>
+      <div class="container">
+        <%= render 'form' %>
+      </div>
   </div>
