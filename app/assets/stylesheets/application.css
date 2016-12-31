@@ -101,7 +101,11 @@ footer p {
 .logo a {
   font-size: 40px !important;
   color: #FF8686;
+  font-weight: 600;
 }
 .logo a:hover, .logo a:active, .logo a:focus {
   color: #333333;
+}
+.fa-heart {
+  color: #FF3636;
 }

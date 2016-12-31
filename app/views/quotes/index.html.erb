@@ -7,7 +7,7 @@
         <div class="button-admin">
           <% if can? :destroy, quote %>
             <%= link_to quote, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <i class="fa fa-ban" aria-hidden="true"></i>
+              <i class="fa fa-trash" aria-hidden="true"></i>
             <% end %>
           <% end %>
           <% if can? :update, quote %>
@@ -24,10 +24,10 @@
         <div class="under">
           <h4>By <%= quote.autor %></h4>
           <div class="like">
-            <%= link_to like_quote_path(quote), method: :put do%>
+            <%= link_to like_quote_path(quote), :class => "love", method: :put do%>
               <i class="fa fa-heart-o" aria-hidden="true"></i><%= quote.get_upvotes.size %>
             <% end %>
-            <%= link_to dislike_quote_path(quote), method: :put do %>
+            <%= link_to dislike_quote_path(quote), :class => 'like', method: :put do %>
               <i class="fa fa-times" aria-hidden="true"></i><%= quote.get_downvotes.size %>
             <% end %>
           </div>
@@ -38,15 +38,17 @@
   $('.grid').packery({
     itemSelector: '.grid-item',
     percentPosition: true,
-    gutter: 5
+    gutter: 6
   });
 </script>
 <script>
-  $('.click').on('click',
- function () {
-   $('i').toggleClass('fa fa-heart');
+$( document).ready(function() {
+    $('.love').click(function(){
+$(this).find('fa fa-heart-o').toggleClass('fa fa-heart-o fa fa-heart');
+$(this).find('i.fa').removeClass('fa-heart-o').addClass('fa-heart');
+    })
+});
 
- })
 
 </script>
 </div>

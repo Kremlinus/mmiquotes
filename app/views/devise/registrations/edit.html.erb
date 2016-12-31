@@ -1,5 +1,5 @@
 <div class="users">
-<h1>Edit <%= resource_name.to_s.humanize %></h2>
+<div class="title"><h2><strong>Edit <%= resource_name.to_s.humanize %></strong></h2></div>
   <div class="container">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
@@ -20,9 +20,18 @@
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off"%>
 
-    <%= f.submit "Update"%>
+
+    <div class="button-users">
+      <%= f.submit "Update"%>
+    </div>
+
 <% end %>
+
 <p>Unhappy? </p>
+<div class="button-users">
+
   <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+</div>
+
 </div>
 </div>
