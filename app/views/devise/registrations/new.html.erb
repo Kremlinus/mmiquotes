@@ -1,3 +1,8 @@
+<div class="navbar">
+  <div class="logo">
+    <%= link_to 'MMIs quotes', quotes_path %>
+  </div>
+</div>
 <div class="users">
   <div class="title">
     <h2>
@@ -13,18 +18,18 @@
       <%= devise_error_messages! %>
 
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true%><br />
+        <%= f.email_field :email, autofocus: true, :class => 'new'%><br />
 
 
         <%= f.label :password %>
         <% if @validatable %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "off"%><br />
+        <%= f.password_field :password, autocomplete: "off", :class => 'new'%><br />
 
 
         <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off"%><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off", :class => 'new'%><br />
         <div class="button-users">
           <%= f.submit "Sign up"%>
         </div>

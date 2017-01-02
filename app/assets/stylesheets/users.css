@@ -38,6 +38,7 @@
   background: #FF8686;
   text-align: center;
   height: 36px;
+  border: 2px solid #FF8686;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -45,16 +46,19 @@
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  transition: 0.4s linear;
+  transition: 0.4s ease;
 }
 .button-users:hover, .button-users:active {
-  opacity: 0.7;
+  background: #FEFEFE;
+  border: 2px solid #FF8686;
 }
+
 .button-users input:hover, .button-users input:hover {
-  border: 0px solide white !important;
+  border: 0px solid white !important;
+  color: #FF8686;
 }
 .button-users input {
-  border: none !important;
+  border: 0px solid white !important;
   text-transform: uppercase;
   color: #FEFEFE;
   font-size: 20px;
@@ -71,9 +75,11 @@
   font-family: 'Inconsolata', monospace;
   font-size: 17px;
   padding: 1px;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
 }
-.new input:active, .new input:hover, .users input:focus, textarea:hover, textarea:focus, textarea:active, , input#quote_autor:hover {
+input.new:hover, .new textarea:hover, textarea#quote_quote:hover,
+input.new:active, .new textarea:active, textarea#quote_quote:active,
+input.new:focus, .new textarea:focus, textarea#quote_quote:focus  {
   border-bottom: 2px solid #FF8686 !important;
 }
 .seperate {
@@ -82,4 +88,10 @@
   color: #F7F7F7;
   margin: inherit;
   padding: inherit;
+}
+checkbox#user_remember_me {
+  width: 10%;
+}
+#remember_me label {
+  width: 80%;
 }

@@ -65,7 +65,7 @@ a {
   font-size: 20px;
   font-family: 'Inconsolata', monospace;
   font-weight: 100;
-  transition: 0.3s linear;
+  transition: 0.3s ease;
 }
 .navbar a:hover {
   color: #FF8686;
@@ -84,11 +84,9 @@ a {
 p {
     font-family: 'Palanquin', sans-serif;
     font-weight: 200;
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 20px;
     text-align: justify;
 }
-
 #notice {
   font-size: 10px;
   color: #FF8686;
@@ -102,6 +100,7 @@ footer p {
   font-size: 40px !important;
   color: #FF8686;
   font-weight: 600;
+  font-family: 'Inconsolata', monospace;
 }
 .logo a:hover, .logo a:active, .logo a:focus {
   color: #333333;

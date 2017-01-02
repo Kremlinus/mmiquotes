@@ -18,7 +18,7 @@
         <div>
           <h6><%= link_to '+ New Quote', new_quote_path %></h6>
           <h3><%= link_to 'Edit profile', edit_user_registration_path %></h3>
-          <h3><%= link_to "Logout", destroy_user_session_path, method: :delete %></h3>
+          <h3><%= link_to 'Log out', destroy_user_session_path, method: :delete %></h3>
         </div>
       <% end %>
     </div>
@@ -29,7 +29,7 @@
       <p>Logged as <strong><%= current_user.email %></strong>.</p>
     <% end %>
     <p id="notice"><%= notice %></p>
-    <p> MMI's quotes © by Emeline Bailleul</p>
+    <p> MMI's quotes © codé par Emeline Bailleul</p>
   </footer>
 
 </html>
