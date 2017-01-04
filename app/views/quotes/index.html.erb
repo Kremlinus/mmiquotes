@@ -24,10 +24,10 @@
         <div class="under">
           <h4>By <%= quote.autor %></h4>
           <div class="like">
-            <%= link_to like_quote_path(quote), :class => "love", method: :put do%>
-              <i class="fa fa-heart" aria-hidden="true"></i><%= quote.get_upvotes.size %>
+            <%= link_to like_quote_path(quote), :class => "change", method: :put do%>
+              <i class="fa fa-heart-o" aria-hidden="true"></i><%= quote.get_upvotes.size %>
             <% end %>
-            <%= link_to dislike_quote_path(quote), :class => 'like', method: :put do %>
+            <%= link_to dislike_quote_path(quote), method: :put do %>
               <i class="fa fa-times" aria-hidden="true"></i><%= quote.get_downvotes.size %>
             <% end %>
           </div>
@@ -43,8 +43,8 @@
 </script>
 <script>
 $( document).ready(function() {
-    $('.love').click(function(){
-$(this).find('i.fa').removeClass('fa-heart-o').addClass('fa-heart');
+    $('.change').click(function(){
+    $(this).find('i.fa').removeClass('fa-heart-o').addClass('fa-heart');
     })
 });
 

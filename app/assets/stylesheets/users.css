@@ -68,6 +68,16 @@
   border-bottom: 2px solid #E1E1E1 !important;
   resize: vertical;
 }
+input#user_remember_me {
+  width: 10% !important;
+}
+div#remember_me {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-content: baseline;
+  align-items: center;
+}
 .users input, .new textarea, textarea#quote_quote  {
   border-bottom: 2px solid #E1E1E1;
   width: 100%;
