@@ -14,7 +14,7 @@
  *= require_self
  */
 
-/*font-family: 'Inconsolata', monospace;
+/*font-family: 'Roboto Mono', monospace;
 font-family: 'Palanquin', sans-serif;
 #333333 -- black / #F7F7F7 -- white / #FF8686 -- rose */
 * {
@@ -39,6 +39,7 @@ a {
   text-decoration: none;
   color: #333333;
 }
+
             /*  GENERAL */
 
 .navbar {
@@ -63,7 +64,7 @@ a {
 .navbar a {
   color: #333333;
   font-size: 20px;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 100;
   transition: 0.3s ease;
 }
@@ -78,14 +79,15 @@ a {
   display: -ms-flex;
   display: flex;
   align-items: baseline;
-  width: 30%;
+  width: 50%;
   justify-content: space-between;
 }
 p {
-    font-family: 'Palanquin', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 15px;
     text-align: justify;
+    line-height: 25px;
 }
 #notice {
   font-size: 10px;
@@ -100,7 +102,7 @@ footer p {
   font-size: 40px !important;
   color: #FF8686;
   font-weight: 600;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .logo a:hover, .logo a:active, .logo a:focus {
   color: #333333;

@@ -29,14 +29,13 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    align-items: baseline;
+    align-items: center;
     border-top: 2px solid #FF8686;
 }
 .under h4 {
-  font-family: 'Incosolata', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 100;
   color: #FF8686;
-  margin-top: 10px;
   font-size: 15px;
 }
 .like {
@@ -46,7 +45,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-family: 'Incosolata', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .button-admin {
   width: 100%;
